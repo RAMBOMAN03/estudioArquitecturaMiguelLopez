@@ -172,6 +172,75 @@ footer a {
     font-size: 1.1em;
 }
 
+.sobre-mi-contenedor {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sobre-mi-contenedor h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* Flexbox para poner foto a un lado y texto al otro */
+.perfil-layout {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Centra ambos elementos verticalmente */
+}
+
+/* Estilos de la fotografía */
+.perfil-foto {
+    flex: 1; /* Ocupa 1 parte del espacio */
+    text-align: center;
+}
+
+.perfil-foto img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra elegante */
+}
+
+/* Estilos del texto */
+.perfil-info {
+    flex: 2; /* Ocupa 2 partes del espacio (es más ancho que la foto) */
+}
+
+.perfil-info h2 {
+    color: #2980b9;
+    margin-bottom: 5px;
+}
+
+.perfil-info .colegiado {
+    font-weight: bold;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.perfil-info p {
+    margin-bottom: 15px;
+}
+
+.perfil-info h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.2em;
+}
+
+.perfil-info ul {
+    margin-left: 20px; /* Mete los puntos de la lista un poco hacia adentro */
+}
+
+.perfil-info li {
+    margin-bottom: 8px;
+}
+
 /* --- DISEÑO RESPONSIVE (MÓVILES Y TABLETS) --- */
 /* Todo lo que esté aquí dentro solo se aplica a pantallas de 768px de ancho o menos */
 @media (max-width: 768px) {
@@ -211,5 +280,16 @@ footer a {
     /* La cuadrícula de servicios pasa de 2 columnas a 1 columna */
     .grid-servicios {
         grid-template-columns: 1fr; 
+    }
+
+    /* Ajustes de Sobre Mí para móviles */
+    .perfil-layout {
+        flex-direction: column; /* Apila la foto arriba y el texto abajo */
+        text-align: center;
+    }
+
+    .perfil-info ul {
+        text-align: left; /* Mantiene la lista alineada a la izquierda aunque el texto esté centrado */
+        display: inline-block;
     }
 }
