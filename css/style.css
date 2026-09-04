@@ -126,3 +126,90 @@ footer a {
     color: #2980b9;
     margin-bottom: 15px;
 }
+
+.contacto-contenedor {
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto-contenedor h1, .contacto-contenedor p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-contacto {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.formulario .campo {
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit; /* Usa la misma letra que la web */
+}
+
+.formulario button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1em;
+}
+
+/* --- DISEÑO RESPONSIVE (MÓVILES Y TABLETS) --- */
+/* Todo lo que esté aquí dentro solo se aplica a pantallas de 768px de ancho o menos */
+@media (max-width: 768px) {
+    
+    /* La cabecera pasa de estar en horizontal a apilarse en vertical */
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila el menú hacia abajo */
+        gap: 10px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1); /* Un fondito sutil para los botones en móvil */
+        border-radius: 5px;
+    }
+
+    /* La sección principal (Hero) reduce sus márgenes y textos */
+    .hero {
+        padding: 50px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    /* La cuadrícula de servicios pasa de 2 columnas a 1 columna */
+    .grid-servicios {
+        grid-template-columns: 1fr; 
+    }
+}

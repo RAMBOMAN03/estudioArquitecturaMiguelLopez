@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tu Nombre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <strong>Miguel Angel López</strong> <br>
+            <span>Arquitectura Técnica & Topografía</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto-contenedor">
+            <h1>Contacta conmigo</h1>
+            <p>Cuéntame sobre tu proyecto y te enviaré un presupuesto sin compromiso.</p>
+
+            <div class="info-contacto">
+                <p><strong>Teléfono:</strong> 600 000 000</p>
+                <p><strong>Email:</strong> tuemail@dominio.com</p>
+                <p><strong>Zona de trabajo:</strong> Tu Provincia y alrededores</p>
+            </div>
+
+            <!-- FORMULARIO SIN JAVASCRIPT -->
+            <!-- Cambia la URL del action por la que te dé Formspree -->
+            <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST" class="formulario">
+                
+                <div class="campo">
+                    <label for="nombre">Nombre o Empresa:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje (Detalles del proyecto):</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="boton">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contacto: <a href="mailto:miguel.a.lopez@coaat.es">miguel.a.lopez@coaat.es</a> | Teléfono: 667 603 651</p>
+        <p>&copy; 2026 Miguel Angel Lopez Gutierrez. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
